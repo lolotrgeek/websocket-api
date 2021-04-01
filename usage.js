@@ -10,5 +10,5 @@ listen(msg => {
 })
 
 // CLIENT
-register({name: 'some_name'})
+register('some_name')
 send('Hello!')
