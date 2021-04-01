@@ -1,0 +1,15 @@
+{
+  "name": "websocket-api",
+  "version": "1.0.0",
+  "description": "A simple websocket server client api with registration.",
+  "main": "usage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^7.4.4"
+  }
+}
