@@ -1,6 +1,6 @@
 require('./src/functions')
-const { run, listen, reply, broadcast, send } = require('./src/server')
-const { register, listen, send } = require('./src/client')
+const { run, listen, reply, broadcast } = require('./src/server')
+const { register, send } = require('./src/client')
 
 LOGGING = false
 
