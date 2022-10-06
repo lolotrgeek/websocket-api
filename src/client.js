@@ -32,7 +32,8 @@ function listen(callback) {
  * @param {object} data 
  */
 function send(data) {
-    if (ws.readyState === 1) ws.send(JSON.stringify(data))
+    if (ws.readyState === 1) return ws.send(JSON.stringify(data))
+    else return setTimeout(() => send(data), 1000)
 }
 
 module.exports = { register, listen, send }
