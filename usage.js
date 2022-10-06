@@ -1,14 +1,10 @@
-require('./src/functions')
-const { run, listen, reply, broadcast } = require('./src/server')
-const { register, send } = require('./src/client')
-
-LOGGING = false
+const { server, client } = require('./main')
 
 // SERVER
-listen(msg => {
+server.listen(msg => {
     console.log(msg)
 })
 
 // CLIENT
-register('some_name')
-send('Hello!')
+client.register('some_name')
+client.send('Hello!')

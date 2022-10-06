@@ -1,10 +1,11 @@
 const WebSocket = require("ws")
 
 const WS_PORT = 8888
-
 const wsServer = new WebSocket.Server({ port: WS_PORT }, () => log(`WS Server is listening at ${WS_PORT}`))
-
 let clients = []
+let debug = false
+
+const log = msg => debug === true ? console.log(msg) : {}
 
 /**
  * 
